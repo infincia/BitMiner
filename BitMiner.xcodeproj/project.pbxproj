@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83405B28137F68610060CAD4 /* TaggedNSURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 83405B22137F68610060CAD4 /* TaggedNSURLConnection.m */; };
+		83405B29137F68610060CAD4 /* NSMutableDictionary+IntegerKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 83405B24137F68610060CAD4 /* NSMutableDictionary+IntegerKeys.m */; };
+		83405B2A137F68610060CAD4 /* RequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 83405B27137F68610060CAD4 /* RequestHandler.m */; };
+		837DF12D139B2E97009987F3 /* SettingsWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 837DF12C139B2E97009987F3 /* SettingsWindow.xib */; };
+		837DF131139B319F009987F3 /* SettingsWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 837DF130139B319F009987F3 /* SettingsWindow.m */; };
+		837DF135139B8E19009987F3 /* SettingsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837DF134139B8E18009987F3 /* SettingsWindowController.m */; };
+		AA1F923513A3EF6E00D5643C /* BitcoinCZ.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F923213A3EF6E00D5643C /* BitcoinCZ.m */; };
+		AA1F923613A3EF6E00D5643C /* Miner.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F923413A3EF6E00D5643C /* Miner.m */; };
+		AA1F923B13A3EFD200D5643C /* MiningPool.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F923913A3EFD200D5643C /* MiningPool.m */; };
+		AA1F923E13A3F1E000D5643C /* MtRed.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F923D13A3F1E000D5643C /* MtRed.m */; };
+		AA239F511379E67300150707 /* StatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA239F4E1379E67300150707 /* StatusItemView.m */; };
+		AA239F761379F17200150707 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA239F731379F17200150707 /* CoreServices.framework */; };
+		AA239F771379F17200150707 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AA239F741379F17200150707 /* libz.dylib */; };
+		AA239F781379F17200150707 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA239F751379F17200150707 /* SystemConfiguration.framework */; };
+		AA239F7B1379F1B200150707 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA239F791379F1B200150707 /* Quartz.framework */; };
+		AA239F7C1379F1B200150707 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA239F7A1379F1B200150707 /* QuartzCore.framework */; };
+		AA435C0E13A2CB550050F307 /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA435C0D13A2CB550050F307 /* MenuController.m */; };
+		AA435C1213A2CCAA0050F307 /* CustomMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA435C1113A2CCA90050F307 /* CustomMenuView.m */; };
+		AA435C2E13A2E0860050F307 /* BitcoinCZMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA435C2D13A2E0860050F307 /* BitcoinCZMenuView.m */; };
+		AA4BBA2D1379E31B005CE351 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4BBA2C1379E31B005CE351 /* Cocoa.framework */; };
+		AA4BBA371379E31C005CE351 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA4BBA351379E31C005CE351 /* InfoPlist.strings */; };
+		AA4BBA3A1379E31C005CE351 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4BBA391379E31C005CE351 /* main.m */; };
+		AA4BBA401379E31C005CE351 /* BitMinerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4BBA3F1379E31C005CE351 /* BitMinerAppDelegate.m */; };
+		AA4BBA431379E31C005CE351 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA4BBA411379E31C005CE351 /* MainMenu.xib */; };
+		AA6C46CF137E10B2000A1DCB /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6C46BE137E10B2000A1DCB /* NSObject+JSON.m */; };
+		AA6C46D0137E10B2000A1DCB /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6C46C0137E10B2000A1DCB /* SBJsonParser.m */; };
+		AA6C46D1137E10B2000A1DCB /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6C46C2137E10B2000A1DCB /* SBJsonStreamParser.m */; };
+		AA6C46D2137E10B2000A1DCB /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6C46C4137E10B2000A1DCB /* SBJsonStreamParserAdapter.m */; };
+		AA6C46D3137E10B2000A1DCB /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6C46C6137E10B2000A1DCB /* SBJsonStreamParserState.m */; };
+		AA6C46D4137E10B2000A1DCB /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6C46C8137E10B2000A1DCB /* SBJsonStreamWriter.m */; };
+		AA6C46D5137E10B2000A1DCB /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6C46CA137E10B2000A1DCB /* SBJsonStreamWriterState.m */; };
+		AA6C46D6137E10B2000A1DCB /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6C46CC137E10B2000A1DCB /* SBJsonTokeniser.m */; };
+		AA6C46D7137E10B2000A1DCB /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6C46CE137E10B2000A1DCB /* SBJsonWriter.m */; };
+		AA6E6C4D1399DC3E003A4224 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = AA6E6C4C1399DC3E003A4224 /* Credits.html */; };
+		AA6E6C831399F2EB003A4224 /* SharedSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6E6C821399F2EB003A4224 /* SharedSettings.m */; };
+		AAD172641399BA1E00B505B0 /* EMKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD172631399BA1D00B505B0 /* EMKeychainItem.m */; };
+		AAD1726D1399BD3500B505B0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD1726C1399BD3500B505B0 /* Security.framework */; };
+		AAD64420137B680E00589EAC /* Logo.icns in Resources */ = {isa = PBXBuildFile; fileRef = AAD6441F137B680E00589EAC /* Logo.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		83405B21137F68610060CAD4 /* TaggedNSURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaggedNSURLConnection.h; sourceTree = "<group>"; };
+		83405B22137F68610060CAD4 /* TaggedNSURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaggedNSURLConnection.m; sourceTree = "<group>"; };
+		83405B23137F68610060CAD4 /* NSMutableDictionary+IntegerKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+IntegerKeys.h"; sourceTree = "<group>"; };
+		83405B24137F68610060CAD4 /* NSMutableDictionary+IntegerKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+IntegerKeys.m"; sourceTree = "<group>"; };
+		83405B25137F68610060CAD4 /* RequestHandlerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestHandlerDelegate.h; sourceTree = "<group>"; };
+		83405B26137F68610060CAD4 /* RequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestHandler.h; sourceTree = "<group>"; };
+		83405B27137F68610060CAD4 /* RequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestHandler.m; sourceTree = "<group>"; };
+		837DF12C139B2E97009987F3 /* SettingsWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsWindow.xib; sourceTree = "<group>"; };
+		837DF12F139B319E009987F3 /* SettingsWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsWindow.h; sourceTree = "<group>"; };
+		837DF130139B319F009987F3 /* SettingsWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsWindow.m; sourceTree = "<group>"; };
+		837DF133139B8E18009987F3 /* SettingsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsWindowController.h; sourceTree = "<group>"; };
+		837DF134139B8E18009987F3 /* SettingsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsWindowController.m; sourceTree = "<group>"; };
+		AA1F923113A3EF6E00D5643C /* BitcoinCZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitcoinCZ.h; sourceTree = "<group>"; };
+		AA1F923213A3EF6E00D5643C /* BitcoinCZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitcoinCZ.m; sourceTree = "<group>"; };
+		AA1F923313A3EF6E00D5643C /* Miner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Miner.h; sourceTree = "<group>"; };
+		AA1F923413A3EF6E00D5643C /* Miner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Miner.m; sourceTree = "<group>"; };
+		AA1F923813A3EFD200D5643C /* MiningPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MiningPool.h; path = "MiningPool.h"; sourceTree = "<group>"; };
+		AA1F923913A3EFD200D5643C /* MiningPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MiningPool.m; path = "MiningPool.m"; sourceTree = "<group>"; };
+		AA1F923A13A3EFD200D5643C /* MiningPoolDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MiningPoolDelegate.h; path = "MiningPoolDelegate.h"; sourceTree = "<group>"; };
+		AA1F923C13A3F1E000D5643C /* MtRed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MtRed.h; path = "MtRed.h"; sourceTree = "<group>"; };
+		AA1F923D13A3F1E000D5643C /* MtRed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MtRed.m; path = "MtRed.m"; sourceTree = "<group>"; };
+		AA239F4D1379E67300150707 /* StatusItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusItemView.h; sourceTree = "<group>"; };
+		AA239F4E1379E67300150707 /* StatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusItemView.m; sourceTree = "<group>"; };
+		AA239F731379F17200150707 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		AA239F741379F17200150707 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		AA239F751379F17200150707 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AA239F791379F1B200150707 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		AA239F7A1379F1B200150707 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AA435C0C13A2CB550050F307 /* MenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuController.h; sourceTree = "<group>"; };
+		AA435C0D13A2CB550050F307 /* MenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuController.m; sourceTree = "<group>"; };
+		AA435C1013A2CCA90050F307 /* CustomMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMenuView.h; sourceTree = "<group>"; };
+		AA435C1113A2CCA90050F307 /* CustomMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMenuView.m; sourceTree = "<group>"; };
+		AA435C2C13A2E0850050F307 /* BitcoinCZMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; path = BitcoinCZMenuView.h; sourceTree = "<group>"; };
+		AA435C2D13A2E0860050F307 /* BitcoinCZMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitcoinCZMenuView.m; sourceTree = "<group>"; };
+		AA4BBA281379E31B005CE351 /* BitMiner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitMiner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA4BBA2C1379E31B005CE351 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		AA4BBA2F1379E31B005CE351 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		AA4BBA301379E31B005CE351 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AA4BBA311379E31B005CE351 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AA4BBA341379E31C005CE351 /* BitMiner-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BitMiner-Info.plist"; sourceTree = "<group>"; };
+		AA4BBA361379E31C005CE351 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AA4BBA381379E31C005CE351 /* BitMiner-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BitMiner-Prefix.pch"; sourceTree = "<group>"; };
+		AA4BBA391379E31C005CE351 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AA4BBA3E1379E31C005CE351 /* BitMinerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BitMinerAppDelegate.h; sourceTree = "<group>"; };
+		AA4BBA3F1379E31C005CE351 /* BitMinerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BitMinerAppDelegate.m; sourceTree = "<group>"; };
+		AA4BBA421379E31C005CE351 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AA6C46BC137E10B2000A1DCB /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		AA6C46BD137E10B2000A1DCB /* NSObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSON.h"; sourceTree = "<group>"; };
+		AA6C46BE137E10B2000A1DCB /* NSObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSON.m"; sourceTree = "<group>"; };
+		AA6C46BF137E10B2000A1DCB /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		AA6C46C0137E10B2000A1DCB /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		AA6C46C1137E10B2000A1DCB /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		AA6C46C2137E10B2000A1DCB /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		AA6C46C3137E10B2000A1DCB /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		AA6C46C4137E10B2000A1DCB /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		AA6C46C5137E10B2000A1DCB /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		AA6C46C6137E10B2000A1DCB /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		AA6C46C7137E10B2000A1DCB /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		AA6C46C8137E10B2000A1DCB /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		AA6C46C9137E10B2000A1DCB /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		AA6C46CA137E10B2000A1DCB /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		AA6C46CB137E10B2000A1DCB /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		AA6C46CC137E10B2000A1DCB /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		AA6C46CD137E10B2000A1DCB /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		AA6C46CE137E10B2000A1DCB /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		AA6E6C4C1399DC3E003A4224 /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
+		AA6E6C811399F2EB003A4224 /* SharedSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedSettings.h; sourceTree = "<group>"; };
+		AA6E6C821399F2EB003A4224 /* SharedSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedSettings.m; sourceTree = "<group>"; };
+		AAD172621399BA1D00B505B0 /* EMKeychainItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMKeychainItem.h; sourceTree = "<group>"; };
+		AAD172631399BA1D00B505B0 /* EMKeychainItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMKeychainItem.m; sourceTree = "<group>"; };
+		AAD1726C1399BD3500B505B0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AAD6441F137B680E00589EAC /* Logo.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Logo.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA4BBA251379E31B005CE351 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD1726D1399BD3500B505B0 /* Security.framework in Frameworks */,
+				AA239F7B1379F1B200150707 /* Quartz.framework in Frameworks */,
+				AA239F7C1379F1B200150707 /* QuartzCore.framework in Frameworks */,
+				AA239F761379F17200150707 /* CoreServices.framework in Frameworks */,
+				AA239F771379F17200150707 /* libz.dylib in Frameworks */,
+				AA239F781379F17200150707 /* SystemConfiguration.framework in Frameworks */,
+				AA4BBA2D1379E31B005CE351 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83405B0D137F5D8A0060CAD4 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				AA6C46BC137E10B2000A1DCB /* JSON.h */,
+				AA6C46BD137E10B2000A1DCB /* NSObject+JSON.h */,
+				AA6C46BE137E10B2000A1DCB /* NSObject+JSON.m */,
+				AA6C46BF137E10B2000A1DCB /* SBJsonParser.h */,
+				AA6C46C0137E10B2000A1DCB /* SBJsonParser.m */,
+				AA6C46C1137E10B2000A1DCB /* SBJsonStreamParser.h */,
+				AA6C46C2137E10B2000A1DCB /* SBJsonStreamParser.m */,
+				AA6C46C3137E10B2000A1DCB /* SBJsonStreamParserAdapter.h */,
+				AA6C46C4137E10B2000A1DCB /* SBJsonStreamParserAdapter.m */,
+				AA6C46C5137E10B2000A1DCB /* SBJsonStreamParserState.h */,
+				AA6C46C6137E10B2000A1DCB /* SBJsonStreamParserState.m */,
+				AA6C46C7137E10B2000A1DCB /* SBJsonStreamWriter.h */,
+				AA6C46C8137E10B2000A1DCB /* SBJsonStreamWriter.m */,
+				AA6C46C9137E10B2000A1DCB /* SBJsonStreamWriterState.h */,
+				AA6C46CA137E10B2000A1DCB /* SBJsonStreamWriterState.m */,
+				AA6C46CB137E10B2000A1DCB /* SBJsonTokeniser.h */,
+				AA6C46CC137E10B2000A1DCB /* SBJsonTokeniser.m */,
+				AA6C46CD137E10B2000A1DCB /* SBJsonWriter.h */,
+				AA6C46CE137E10B2000A1DCB /* SBJsonWriter.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		83405B20137F684E0060CAD4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				83405B25137F68610060CAD4 /* RequestHandlerDelegate.h */,
+				83405B26137F68610060CAD4 /* RequestHandler.h */,
+				83405B27137F68610060CAD4 /* RequestHandler.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		83405B2B137F68870060CAD4 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				83405B21137F68610060CAD4 /* TaggedNSURLConnection.h */,
+				83405B22137F68610060CAD4 /* TaggedNSURLConnection.m */,
+				83405B23137F68610060CAD4 /* NSMutableDictionary+IntegerKeys.h */,
+				83405B24137F68610060CAD4 /* NSMutableDictionary+IntegerKeys.m */,
+			);
+			name = Additions;
+			sourceTree = "<group>";
+		};
+		83405B2F137F6CFE0060CAD4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA1F923813A3EFD200D5643C /* MiningPool.h */,
+				AA1F923913A3EFD200D5643C /* MiningPool.m */,
+				AA1F923A13A3EFD200D5643C /* MiningPoolDelegate.h */,
+				AA1F923113A3EF6E00D5643C /* BitcoinCZ.h */,
+				AA1F923213A3EF6E00D5643C /* BitcoinCZ.m */,
+				AA1F923C13A3F1E000D5643C /* MtRed.h */,
+				AA1F923D13A3F1E000D5643C /* MtRed.m */,
+				AA1F923313A3EF6E00D5643C /* Miner.h */,
+				AA1F923413A3EF6E00D5643C /* Miner.m */,
+				AAD172621399BA1D00B505B0 /* EMKeychainItem.h */,
+				AAD172631399BA1D00B505B0 /* EMKeychainItem.m */,
+				AA239F4D1379E67300150707 /* StatusItemView.h */,
+				AA239F4E1379E67300150707 /* StatusItemView.m */,
+				AA435C1013A2CCA90050F307 /* CustomMenuView.h */,
+				AA435C1113A2CCA90050F307 /* CustomMenuView.m */,
+				AA435C2C13A2E0850050F307 /* BitcoinCZMenuView.h */,
+				AA435C2D13A2E0860050F307 /* BitcoinCZMenuView.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		837DF12E139B2EC8009987F3 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				AA4BBA411379E31C005CE351 /* MainMenu.xib */,
+				837DF12C139B2E97009987F3 /* SettingsWindow.xib */,
+			);
+			name = Nibs;
+			sourceTree = "<group>";
+		};
+		837DF132139B3B8A009987F3 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AA6E6C811399F2EB003A4224 /* SharedSettings.h */,
+				AA6E6C821399F2EB003A4224 /* SharedSettings.m */,
+				837DF12F139B319E009987F3 /* SettingsWindow.h */,
+				837DF130139B319F009987F3 /* SettingsWindow.m */,
+				837DF133139B8E18009987F3 /* SettingsWindowController.h */,
+				837DF134139B8E18009987F3 /* SettingsWindowController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		AA4BBA1D1379E31B005CE351 = {
+			isa = PBXGroup;
+			children = (
+				AA4BBA321379E31B005CE351 /* BitMiner */,
+				AA4BBA2B1379E31B005CE351 /* Frameworks */,
+				AA4BBA291379E31B005CE351 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA4BBA291379E31B005CE351 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA4BBA281379E31B005CE351 /* BitMiner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA4BBA2B1379E31B005CE351 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAD1726C1399BD3500B505B0 /* Security.framework */,
+				AA4BBA2C1379E31B005CE351 /* Cocoa.framework */,
+				AA4BBA2E1379E31B005CE351 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA4BBA2E1379E31B005CE351 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA239F791379F1B200150707 /* Quartz.framework */,
+				AA239F7A1379F1B200150707 /* QuartzCore.framework */,
+				AA239F741379F17200150707 /* libz.dylib */,
+				AA239F731379F17200150707 /* CoreServices.framework */,
+				AA239F751379F17200150707 /* SystemConfiguration.framework */,
+				AA4BBA2F1379E31B005CE351 /* AppKit.framework */,
+				AA4BBA301379E31B005CE351 /* CoreData.framework */,
+				AA4BBA311379E31B005CE351 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		AA4BBA321379E31B005CE351 /* BitMiner */ = {
+			isa = PBXGroup;
+			children = (
+				83405B2F137F6CFE0060CAD4 /* Models */,
+				83405B2B137F68870060CAD4 /* Additions */,
+				83405B20137F684E0060CAD4 /* Networking */,
+				83405B0D137F5D8A0060CAD4 /* JSON */,
+				837DF132139B3B8A009987F3 /* Settings */,
+				AA435C0C13A2CB550050F307 /* MenuController.h */,
+				AA435C0D13A2CB550050F307 /* MenuController.m */,
+				AA4BBA3E1379E31C005CE351 /* BitMinerAppDelegate.h */,
+				AA4BBA3F1379E31C005CE351 /* BitMinerAppDelegate.m */,
+				837DF12E139B2EC8009987F3 /* Nibs */,
+				AA4BBA331379E31B005CE351 /* Supporting Files */,
+			);
+			path = BitMiner;
+			sourceTree = "<group>";
+		};
+		AA4BBA331379E31B005CE351 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAD6441F137B680E00589EAC /* Logo.icns */,
+				AA4BBA341379E31C005CE351 /* BitMiner-Info.plist */,
+				AA4BBA351379E31C005CE351 /* InfoPlist.strings */,
+				AA4BBA381379E31C005CE351 /* BitMiner-Prefix.pch */,
+				AA4BBA391379E31C005CE351 /* main.m */,
+				AA6E6C4C1399DC3E003A4224 /* Credits.html */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA4BBA271379E31B005CE351 /* BitMiner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA4BBA461379E31C005CE351 /* Build configuration list for PBXNativeTarget "BitMiner" */;
+			buildPhases = (
+				AA4BBA241379E31B005CE351 /* Sources */,
+				AA4BBA251379E31B005CE351 /* Frameworks */,
+				AA4BBA261379E31B005CE351 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BitMiner;
+			productName = BitMiner;
+			productReference = AA4BBA281379E31B005CE351 /* BitMiner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA4BBA1F1379E31B005CE351 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = none;
+			};
+			buildConfigurationList = AA4BBA221379E31B005CE351 /* Build configuration list for PBXProject "BitMiner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AA4BBA1D1379E31B005CE351;
+			productRefGroup = AA4BBA291379E31B005CE351 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA4BBA271379E31B005CE351 /* BitMiner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA4BBA261379E31B005CE351 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA4BBA371379E31C005CE351 /* InfoPlist.strings in Resources */,
+				AA4BBA431379E31C005CE351 /* MainMenu.xib in Resources */,
+				AAD64420137B680E00589EAC /* Logo.icns in Resources */,
+				AA6E6C4D1399DC3E003A4224 /* Credits.html in Resources */,
+				837DF12D139B2E97009987F3 /* SettingsWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA4BBA241379E31B005CE351 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA4BBA3A1379E31C005CE351 /* main.m in Sources */,
+				AA4BBA401379E31C005CE351 /* BitMinerAppDelegate.m in Sources */,
+				AA239F511379E67300150707 /* StatusItemView.m in Sources */,
+				AA6C46CF137E10B2000A1DCB /* NSObject+JSON.m in Sources */,
+				AA6C46D0137E10B2000A1DCB /* SBJsonParser.m in Sources */,
+				AA6C46D1137E10B2000A1DCB /* SBJsonStreamParser.m in Sources */,
+				AA6C46D2137E10B2000A1DCB /* SBJsonStreamParserAdapter.m in Sources */,
+				AA6C46D3137E10B2000A1DCB /* SBJsonStreamParserState.m in Sources */,
+				AA6C46D4137E10B2000A1DCB /* SBJsonStreamWriter.m in Sources */,
+				AA6C46D5137E10B2000A1DCB /* SBJsonStreamWriterState.m in Sources */,
+				AA6C46D6137E10B2000A1DCB /* SBJsonTokeniser.m in Sources */,
+				AA6C46D7137E10B2000A1DCB /* SBJsonWriter.m in Sources */,
+				83405B28137F68610060CAD4 /* TaggedNSURLConnection.m in Sources */,
+				83405B29137F68610060CAD4 /* NSMutableDictionary+IntegerKeys.m in Sources */,
+				83405B2A137F68610060CAD4 /* RequestHandler.m in Sources */,
+				AAD172641399BA1E00B505B0 /* EMKeychainItem.m in Sources */,
+				AA6E6C831399F2EB003A4224 /* SharedSettings.m in Sources */,
+				837DF131139B319F009987F3 /* SettingsWindow.m in Sources */,
+				837DF135139B8E19009987F3 /* SettingsWindowController.m in Sources */,
+				AA435C0E13A2CB550050F307 /* MenuController.m in Sources */,
+				AA435C1213A2CCAA0050F307 /* CustomMenuView.m in Sources */,
+				AA435C2E13A2E0860050F307 /* BitcoinCZMenuView.m in Sources */,
+				AA1F923513A3EF6E00D5643C /* BitcoinCZ.m in Sources */,
+				AA1F923613A3EF6E00D5643C /* Miner.m in Sources */,
+				AA1F923B13A3EFD200D5643C /* MiningPool.m in Sources */,
+				AA1F923E13A3F1E000D5643C /* MtRed.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AA4BBA351379E31C005CE351 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA4BBA361379E31C005CE351 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AA4BBA411379E31C005CE351 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA4BBA421379E31C005CE351 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA4BBA441379E31C005CE351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AA4BBA451379E31C005CE351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AA4BBA471379E31C005CE351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BitMiner/BitMiner-Prefix.pch";
+				INFOPLIST_FILE = "BitMiner/BitMiner-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AA4BBA481379E31C005CE351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BitMiner/BitMiner-Prefix.pch";
+				INFOPLIST_FILE = "BitMiner/BitMiner-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA4BBA221379E31B005CE351 /* Build configuration list for PBXProject "BitMiner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA4BBA441379E31C005CE351 /* Debug */,
+				AA4BBA451379E31C005CE351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA4BBA461379E31C005CE351 /* Build configuration list for PBXNativeTarget "BitMiner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA4BBA471379E31C005CE351 /* Debug */,
+				AA4BBA481379E31C005CE351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA4BBA1F1379E31B005CE351 /* Project object */;
+}
