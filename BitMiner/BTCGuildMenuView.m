@@ -25,7 +25,7 @@
 
 - (id)initWithFrame:(NSRect)frame {
 	CGRect newFrame = frame;
-	newFrame.size.height = frame.size.height - 25;
+	newFrame.size.height = frame.size.height - 30;
     self = [super initWithFrame:newFrame];
     if (self) {
 		//section header
