@@ -28,7 +28,7 @@
 
 @implementation StatusItemView
 
-@synthesize statusItem, previousTickerValue, colorTimer;
+@synthesize statusItem, previousRewardValue, colorTimer;
 
 - (void)drawRect:(NSRect)rect {
     // Draw status bar background, highlighted if menu is showing
@@ -43,7 +43,7 @@
     NSColor *white = [NSColor whiteColor];
     [fontAttributes setObject:font forKey:NSFontAttributeName];
     
-    NSString *tickerPretty = [NSString stringWithFormat:@"฿%0.2f",[tickerValue floatValue]];
+    NSString *tickerPretty = [NSString stringWithFormat:@"฿%0.2f",[rewardValue floatValue]];
     CGSize expected = [tickerPretty sizeWithAttributes:fontAttributes];
     CGRect newFrame = self.frame;
     newFrame.size.width = expected.width + 5;
@@ -86,8 +86,8 @@
     self = [super initWithFrame:newFrame];
     if (self) {
         firstTick = YES;
-        self.previousTickerValue = [NSNumber numberWithInt:0];
-        self.tickerValue = [NSNumber numberWithInt:0];
+        self.previousRewardValue = [NSNumber numberWithInt:0];
+        self.rewardValue = [NSNumber numberWithInt:0];
         flashColor = [[NSColor blackColor] retain];
 		currentColor = [[NSColor blackColor] retain];
         lastUpdated = [[NSDate date] retain];
@@ -101,7 +101,7 @@
 
 - (void)dealloc {
     [statusItem release];
-    [tickerValue release];
+    [rewardValue release];
     [super dealloc];
 }
 
@@ -140,16 +140,16 @@
     [self setNeedsDisplay:YES];
 }
 
-- (void)setTickerValue:(NSNumber *)value {
+- (void)setRewardValue:(NSNumber *)value {
     
-    [previousTickerValue release];
-    previousTickerValue = tickerValue;
+    [previousRewardValue release];
+    previousRewardValue = rewardValue;
     
     [value retain];
-    tickerValue = value;
+    rewardValue = value;
     
-    double current = [tickerValue doubleValue];
-    double previous = [previousTickerValue doubleValue];
+    double current = [rewardValue doubleValue];
+    double previous = [previousRewardValue doubleValue];
     BOOL animate_color = YES;
     if(firstTick){
         firstTick = NO;
@@ -190,8 +190,8 @@
 
 }
 
-- (NSNumber *)tickerValue {
-    return tickerValue;
+- (NSNumber *)rewardValue {
+    return rewardValue;
 }
 
 @end

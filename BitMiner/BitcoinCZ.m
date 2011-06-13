@@ -38,6 +38,7 @@
 	newminer.send_threshold = [formatter numberFromString:[minerdata objectForKey:@"send_threshold"]];
 	newminer.wallet = [minerdata objectForKey:@"wallet"];
 	newminer.username = [minerdata objectForKey:@"username"];
+	newminer.pool = self;
 	NSMutableArray *workerArray = [NSMutableArray arrayWithCapacity:10];
 	NSDictionary *dict = [minerdata objectForKey:@"workers"];
 	for(NSString *key in dict) {

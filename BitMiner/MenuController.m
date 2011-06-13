@@ -23,9 +23,9 @@
 @synthesize currentMenuStop = _currentMenuStop;
 @synthesize viewDict = _viewDict;
 @synthesize itemDict = _itemDict;
+@synthesize rewardStorage = _rewardStorage;
 
-- (id)init
-{
+- (id)init {
     self = [super init];
     if (self) {	
 		self.viewDict = [NSMutableDictionary dictionaryWithCapacity:10];
@@ -51,6 +51,7 @@
 		trayMenu = [[NSMenu alloc] initWithTitle:@"Ticker"];
 		[statusItemView setMenu:trayMenu];
 		self.currentMenuStop = 0;
+		self.rewardStorage = [NSMutableDictionary dictionaryWithCapacity:10];
     }
 	
     return self;
@@ -111,8 +112,7 @@
 }
 
 -(void)miningPool:(MiningPool*)pool didReceiveMiner:(Miner*)minerdata {
-	//[statusItemView setTickerValue:minerdata.confirmed_reward];
-	self.tickerValue = minerdata.confirmed_reward;
+	[self.rewardStorage setObject:minerdata.confirmed_reward forKey:NSStringFromClass([minerdata.pool class])];
 	CustomMenuView *view = [self.viewDict objectForKey:NSStringFromClass( [pool class] ) ] ;
 	[view setUnconfirmedReward:[minerdata.unconfirmed_reward stringValue]];
 	[view setConfirmedReward:[minerdata.confirmed_reward stringValue]];
@@ -125,8 +125,16 @@
     hashFormatter.numberStyle = NSNumberFormatterDecimalStyle;
     hashFormatter.hasThousandSeparators = YES;
    	[view setHashOutput:[hashFormatter stringFromNumber:[NSNumber numberWithDouble:hashcount]]];
-    
     [hashFormatter release];
+	[self updateRewardDisplay];
+}
+
+-(void)updateRewardDisplay {
+	double reward;
+	for (NSString *key in self.rewardStorage) {
+		reward = reward + [[self.rewardStorage objectForKey:key] doubleValue];
+	}
+	[statusItemView setRewardValue:[NSNumber numberWithDouble:reward]];
 }
 
 

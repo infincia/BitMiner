@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "MiningPool.h"
 
 @interface Miner : NSObject {
 	NSString *_username;
@@ -17,8 +17,10 @@
 	NSNumber *_estimated_reward;
 	NSString *_wallet;
 	NSArray *_workers;
+	MiningPool *_pool;
 }
 
+@property (retain) MiningPool *pool;
 @property (retain) NSString *username;
 @property (retain) NSNumber *unconfirmed_reward;
 @property (retain) NSNumber *confirmed_reward;

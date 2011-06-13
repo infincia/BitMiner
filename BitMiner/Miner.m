@@ -18,5 +18,6 @@
 @synthesize wallet = _wallet;
 @synthesize workers = _workers;
 @synthesize username = _username;
+@synthesize pool = _pool;
 
 @end

@@ -21,6 +21,7 @@
 	StatusItemView *statusItemView;
 	NSStatusItem *_statusItem;
 	
+	NSMutableDictionary *_rewardStorage;
 	NSNumberFormatter *currencyFormatter;
 	
 	NSNumber *_tickerValue;
@@ -39,6 +40,9 @@
 
 -(void)addSelectorItems;
 
+-(void)updateRewardDisplay;
+
+@property (retain) NSMutableDictionary *rewardStorage;
 @property (retain, nonatomic) NSNumber *tickerValue;
 @property () NSInteger currentMenuStop;
 @property (retain) NSMutableDictionary *viewDict;

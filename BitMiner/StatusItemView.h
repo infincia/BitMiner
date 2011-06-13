@@ -21,8 +21,8 @@
 
 @interface StatusItemView : NSView <NSMenuDelegate> {
     NSStatusItem *statusItem;
-    NSNumber *tickerValue;
-    NSNumber *previousTickerValue;
+    NSNumber *rewardValue;
+    NSNumber *previousRewardValue;
     NSDate *lastUpdated;
     NSTimer *colorTimer;
     NSColor *flashColor;
@@ -33,10 +33,10 @@
 }
 
 @property (retain, nonatomic) NSStatusItem *statusItem;
-@property (retain, nonatomic) NSNumber *tickerValue;
-@property (retain, nonatomic) NSNumber *previousTickerValue;
+@property (retain, nonatomic) NSNumber *rewardValue;
+@property (retain, nonatomic) NSNumber *previousRewardValue;
 @property (retain, nonatomic) NSTimer *colorTimer;
 
-- (void)setTickerValue:(NSNumber *)value;
+- (void)setRewardValue:(NSNumber *)value;
 
 @end
