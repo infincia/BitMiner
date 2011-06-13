@@ -10,6 +10,8 @@
 #import "MiningPool.h"
 #import "Miner.h"
 
+@class MiningPoolDelegate;
+
 @interface MtRed : MiningPool {
 
     

@@ -50,6 +50,11 @@
 	[btcguild fetchMiner];
 	[menuController createMenuForMiningPool:btcguild];
 	
+	mtred = [[MtRed alloc] initWithDelegate:menuController];
+	mtRedTimer = [[NSTimer scheduledTimerWithTimeInterval:30 target:mtred selector:@selector(fetchMiner) userInfo:nil repeats:YES] retain];
+	[mtred fetchMiner];
+	[menuController createMenuForMiningPool:mtred];
+	
 	[menuController addSelectorItems];
 }
 

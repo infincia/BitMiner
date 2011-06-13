@@ -7,7 +7,7 @@
 enum kMiningPools {
     ePoolMtRed = 0,
 	ePoolBitcoinCz = 1,
-	eMarketBTCGuild = 2,
+	ePoolBTCGuild = 2,
     eNumberOfPools = 3
 };
 

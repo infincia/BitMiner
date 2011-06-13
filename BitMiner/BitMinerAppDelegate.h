@@ -32,7 +32,7 @@
     MtRed *mtred;
 	BitcoinCZ *bitcoincz;
 	BTCGuild *btcguild;
-	NSTimer *mtredTimer;
+	NSTimer *mtRedTimer;
 	NSTimer *bitcoinczTimer;
 	NSTimer *btcGuildTimer;
     NSMutableArray *stats;

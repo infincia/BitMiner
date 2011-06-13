@@ -7,7 +7,6 @@
 //
 
 #import "BTCGuild.h"
-#import "BtcGuild.h"
 #import "MiningPoolDelegate.h"
 #import "Miner.h"
 #define BTCGUILD_MINING_URL @"http://www.btcguild.com/api.php"
@@ -23,7 +22,7 @@
 
 -(void)fetchMiner {
     MSLog(@"Fetching miner...");
-	NSString *apiKey = [sharedSettingManager apiKeyForMarket:eMarketBTCGuild];
+	NSString *apiKey = [sharedSettingManager apiKeyForMarket:ePoolBTCGuild];
 	if ([apiKey isEqualToString:@""] || apiKey == nil) {
 		return;
 	}

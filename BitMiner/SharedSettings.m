@@ -105,7 +105,7 @@ static SharedSettings *sharedSettingManager = nil;
         case ePoolMtRed:
             return @"MtRed";
             break;
-		case eMarketBTCGuild:
+		case ePoolBTCGuild:
 			return @"BTCGuild";
 			break;
         default:

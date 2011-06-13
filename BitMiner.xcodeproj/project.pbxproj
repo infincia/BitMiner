@@ -19,6 +19,7 @@
 		AA1F923E13A3F1E000D5643C /* MtRed.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F923D13A3F1E000D5643C /* MtRed.m */; };
 		AA201E8F13A644F80063066E /* BTCGuild.m in Sources */ = {isa = PBXBuildFile; fileRef = AA201E8E13A644F80063066E /* BTCGuild.m */; };
 		AA201E9313A646FB0063066E /* BTCGuildMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA201E9213A646FA0063066E /* BTCGuildMenuView.m */; };
+		AA201EB613A66C050063066E /* MtRedMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA201EB513A66C050063066E /* MtRedMenuView.m */; };
 		AA239F511379E67300150707 /* StatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA239F4E1379E67300150707 /* StatusItemView.m */; };
 		AA239F761379F17200150707 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA239F731379F17200150707 /* CoreServices.framework */; };
 		AA239F771379F17200150707 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AA239F741379F17200150707 /* libz.dylib */; };
@@ -71,10 +72,12 @@
 		AA1F923A13A3EFD200D5643C /* MiningPoolDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiningPoolDelegate.h; sourceTree = "<group>"; };
 		AA1F923C13A3F1E000D5643C /* MtRed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtRed.h; sourceTree = "<group>"; };
 		AA1F923D13A3F1E000D5643C /* MtRed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MtRed.m; sourceTree = "<group>"; };
-		AA201E8D13A644F80063066E /* BTCGuild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTCGuild.h; path = "BTCGuild.h"; sourceTree = "<group>"; };
-		AA201E8E13A644F80063066E /* BTCGuild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTCGuild.m; path = "BTCGuild.m"; sourceTree = "<group>"; };
-		AA201E9113A646FA0063066E /* BTCGuildMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTCGuildMenuView.h; path = "BTCGuildMenuView.h"; sourceTree = "<group>"; };
-		AA201E9213A646FA0063066E /* BTCGuildMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTCGuildMenuView.m; path = "BTCGuildMenuView.m"; sourceTree = "<group>"; };
+		AA201E8D13A644F80063066E /* BTCGuild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCGuild.h; sourceTree = "<group>"; };
+		AA201E8E13A644F80063066E /* BTCGuild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCGuild.m; sourceTree = "<group>"; };
+		AA201E9113A646FA0063066E /* BTCGuildMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCGuildMenuView.h; sourceTree = "<group>"; };
+		AA201E9213A646FA0063066E /* BTCGuildMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCGuildMenuView.m; sourceTree = "<group>"; };
+		AA201EB413A66C040063066E /* MtRedMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MtRedMenuView.h; path = "MtRedMenuView.h"; sourceTree = "<group>"; };
+		AA201EB513A66C050063066E /* MtRedMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MtRedMenuView.m; path = "MtRedMenuView.m"; sourceTree = "<group>"; };
 		AA239F4D1379E67300150707 /* StatusItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusItemView.h; sourceTree = "<group>"; };
 		AA239F4E1379E67300150707 /* StatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusItemView.m; sourceTree = "<group>"; };
 		AA239F731379F17200150707 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
@@ -217,6 +220,8 @@
 				AA435C2D13A2E0860050F307 /* BitcoinCZMenuView.m */,
 				AA201E9113A646FA0063066E /* BTCGuildMenuView.h */,
 				AA201E9213A646FA0063066E /* BTCGuildMenuView.m */,
+				AA201EB413A66C040063066E /* MtRedMenuView.h */,
+				AA201EB513A66C050063066E /* MtRedMenuView.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -409,6 +414,7 @@
 				AA1F923E13A3F1E000D5643C /* MtRed.m in Sources */,
 				AA201E8F13A644F80063066E /* BTCGuild.m in Sources */,
 				AA201E9313A646FB0063066E /* BTCGuildMenuView.m in Sources */,
+				AA201EB613A66C050063066E /* MtRedMenuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
