@@ -20,6 +20,7 @@
 #import "BitMinerAppDelegate.h"
 #import "MtRed.h"
 #import "BitcoinCZ.h"
+#import "BTCGuild.h"
 #import "SharedSettings.h"
 
 #import "SettingsWindowController.h"
@@ -43,6 +44,11 @@
     bitcoinczTimer = [[NSTimer scheduledTimerWithTimeInterval:30 target:bitcoincz selector:@selector(fetchMiner) userInfo:nil repeats:YES] retain];
 	[bitcoincz fetchMiner];
 	[menuController createMenuForMiningPool:bitcoincz];
+	
+	btcguild = [[BTCGuild alloc] initWithDelegate:menuController];
+	btcGuildTimer = [[NSTimer scheduledTimerWithTimeInterval:30 target:btcguild selector:@selector(fetchMiner) userInfo:nil repeats:YES] retain];
+	[btcguild fetchMiner];
+	[menuController createMenuForMiningPool:btcguild];
 	
 	[menuController addSelectorItems];
 }

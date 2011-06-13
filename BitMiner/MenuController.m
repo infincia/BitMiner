@@ -111,7 +111,7 @@
 }
 
 -(void)miningPool:(MiningPool*)pool didReceiveMiner:(Miner*)minerdata {
-	[statusItemView setTickerValue:minerdata.confirmed_reward];
+	//[statusItemView setTickerValue:minerdata.confirmed_reward];
 	self.tickerValue = minerdata.confirmed_reward;
 	CustomMenuView *view = [self.viewDict objectForKey:NSStringFromClass( [pool class] ) ] ;
 	[view setUnconfirmedReward:[minerdata.unconfirmed_reward stringValue]];

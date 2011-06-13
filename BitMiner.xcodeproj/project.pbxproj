@@ -17,6 +17,8 @@
 		AA1F923613A3EF6E00D5643C /* Miner.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F923413A3EF6E00D5643C /* Miner.m */; };
 		AA1F923B13A3EFD200D5643C /* MiningPool.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F923913A3EFD200D5643C /* MiningPool.m */; };
 		AA1F923E13A3F1E000D5643C /* MtRed.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F923D13A3F1E000D5643C /* MtRed.m */; };
+		AA201E8F13A644F80063066E /* BTCGuild.m in Sources */ = {isa = PBXBuildFile; fileRef = AA201E8E13A644F80063066E /* BTCGuild.m */; };
+		AA201E9313A646FB0063066E /* BTCGuildMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA201E9213A646FA0063066E /* BTCGuildMenuView.m */; };
 		AA239F511379E67300150707 /* StatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA239F4E1379E67300150707 /* StatusItemView.m */; };
 		AA239F761379F17200150707 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA239F731379F17200150707 /* CoreServices.framework */; };
 		AA239F771379F17200150707 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AA239F741379F17200150707 /* libz.dylib */; };
@@ -64,11 +66,15 @@
 		AA1F923213A3EF6E00D5643C /* BitcoinCZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitcoinCZ.m; sourceTree = "<group>"; };
 		AA1F923313A3EF6E00D5643C /* Miner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Miner.h; sourceTree = "<group>"; };
 		AA1F923413A3EF6E00D5643C /* Miner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Miner.m; sourceTree = "<group>"; };
-		AA1F923813A3EFD200D5643C /* MiningPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MiningPool.h; path = "MiningPool.h"; sourceTree = "<group>"; };
-		AA1F923913A3EFD200D5643C /* MiningPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MiningPool.m; path = "MiningPool.m"; sourceTree = "<group>"; };
-		AA1F923A13A3EFD200D5643C /* MiningPoolDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MiningPoolDelegate.h; path = "MiningPoolDelegate.h"; sourceTree = "<group>"; };
-		AA1F923C13A3F1E000D5643C /* MtRed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MtRed.h; path = "MtRed.h"; sourceTree = "<group>"; };
-		AA1F923D13A3F1E000D5643C /* MtRed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MtRed.m; path = "MtRed.m"; sourceTree = "<group>"; };
+		AA1F923813A3EFD200D5643C /* MiningPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiningPool.h; sourceTree = "<group>"; };
+		AA1F923913A3EFD200D5643C /* MiningPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiningPool.m; sourceTree = "<group>"; };
+		AA1F923A13A3EFD200D5643C /* MiningPoolDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiningPoolDelegate.h; sourceTree = "<group>"; };
+		AA1F923C13A3F1E000D5643C /* MtRed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtRed.h; sourceTree = "<group>"; };
+		AA1F923D13A3F1E000D5643C /* MtRed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MtRed.m; sourceTree = "<group>"; };
+		AA201E8D13A644F80063066E /* BTCGuild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTCGuild.h; path = "BTCGuild.h"; sourceTree = "<group>"; };
+		AA201E8E13A644F80063066E /* BTCGuild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTCGuild.m; path = "BTCGuild.m"; sourceTree = "<group>"; };
+		AA201E9113A646FA0063066E /* BTCGuildMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTCGuildMenuView.h; path = "BTCGuildMenuView.h"; sourceTree = "<group>"; };
+		AA201E9213A646FA0063066E /* BTCGuildMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTCGuildMenuView.m; path = "BTCGuildMenuView.m"; sourceTree = "<group>"; };
 		AA239F4D1379E67300150707 /* StatusItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusItemView.h; sourceTree = "<group>"; };
 		AA239F4E1379E67300150707 /* StatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusItemView.m; sourceTree = "<group>"; };
 		AA239F731379F17200150707 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
@@ -80,7 +86,7 @@
 		AA435C0D13A2CB550050F307 /* MenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuController.m; sourceTree = "<group>"; };
 		AA435C1013A2CCA90050F307 /* CustomMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMenuView.h; sourceTree = "<group>"; };
 		AA435C1113A2CCA90050F307 /* CustomMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMenuView.m; sourceTree = "<group>"; };
-		AA435C2C13A2E0850050F307 /* BitcoinCZMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; path = BitcoinCZMenuView.h; sourceTree = "<group>"; };
+		AA435C2C13A2E0850050F307 /* BitcoinCZMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitcoinCZMenuView.h; sourceTree = "<group>"; };
 		AA435C2D13A2E0860050F307 /* BitcoinCZMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitcoinCZMenuView.m; sourceTree = "<group>"; };
 		AA4BBA281379E31B005CE351 /* BitMiner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitMiner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA4BBA2C1379E31B005CE351 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -195,6 +201,8 @@
 				AA1F923A13A3EFD200D5643C /* MiningPoolDelegate.h */,
 				AA1F923113A3EF6E00D5643C /* BitcoinCZ.h */,
 				AA1F923213A3EF6E00D5643C /* BitcoinCZ.m */,
+				AA201E8D13A644F80063066E /* BTCGuild.h */,
+				AA201E8E13A644F80063066E /* BTCGuild.m */,
 				AA1F923C13A3F1E000D5643C /* MtRed.h */,
 				AA1F923D13A3F1E000D5643C /* MtRed.m */,
 				AA1F923313A3EF6E00D5643C /* Miner.h */,
@@ -207,6 +215,8 @@
 				AA435C1113A2CCA90050F307 /* CustomMenuView.m */,
 				AA435C2C13A2E0850050F307 /* BitcoinCZMenuView.h */,
 				AA435C2D13A2E0860050F307 /* BitcoinCZMenuView.m */,
+				AA201E9113A646FA0063066E /* BTCGuildMenuView.h */,
+				AA201E9213A646FA0063066E /* BTCGuildMenuView.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -397,6 +407,8 @@
 				AA1F923613A3EF6E00D5643C /* Miner.m in Sources */,
 				AA1F923B13A3EFD200D5643C /* MiningPool.m in Sources */,
 				AA1F923E13A3F1E000D5643C /* MtRed.m in Sources */,
+				AA201E8F13A644F80063066E /* BTCGuild.m in Sources */,
+				AA201E9313A646FB0063066E /* BTCGuildMenuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

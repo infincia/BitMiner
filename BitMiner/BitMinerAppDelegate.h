@@ -23,6 +23,7 @@
 @class RequestHandler;
 @class SettingsWindow;
 @class BitcoinCZ;
+@class BTCGuild;
 @class MtRed;
 
 @interface BitMinerAppDelegate : NSObject <NSApplicationDelegate> {
@@ -30,8 +31,10 @@
 	SharedSettings *sharedSettingManager;
     MtRed *mtred;
 	BitcoinCZ *bitcoincz;
+	BTCGuild *btcguild;
 	NSTimer *mtredTimer;
 	NSTimer *bitcoinczTimer;
+	NSTimer *btcGuildTimer;
     NSMutableArray *stats;
 	
     NSWindowController *settingsWindowController;

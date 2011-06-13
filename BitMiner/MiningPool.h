@@ -7,7 +7,8 @@
 enum kMiningPools {
     ePoolMtRed = 0,
 	ePoolBitcoinCz = 1,
-    eNumberOfPools = 2
+	eMarketBTCGuild = 2,
+    eNumberOfPools = 3
 };
 
 @class RequestHandler;
