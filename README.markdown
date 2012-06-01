@@ -1,0 +1,1 @@
+### This is a very simple Bitcoin mining pool monitor app for OS X, it isn't being maintained or even used anymore but it should still work, assuming the mining pools it is built to work with are still actively running.
